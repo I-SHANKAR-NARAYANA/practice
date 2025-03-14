@@ -30,3 +30,4 @@ export default function UserList() {
   if (error) return <p>Error: {error}</p>;
   return <ul>{data?.map(u => <li key={u.id}>{u.name}</li>)}</ul>;
 }
+
