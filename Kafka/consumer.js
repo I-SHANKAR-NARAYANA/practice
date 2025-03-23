@@ -6,7 +6,6 @@ const kafka = new Kafka({
 });
 
 const consumer = kafka.consumer({ groupId: "practice-group" });
-
 async function processMessage(topic, message) {
   const event = JSON.parse(message.value.toString());
   const key   = message.key?.toString();
