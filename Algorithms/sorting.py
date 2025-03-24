@@ -29,3 +29,4 @@ if __name__ == "__main__":
     print("Original:  ", data)
     print("Merge sort:", merge_sort(data.copy()))
     print("Quick sort:", quick_sort(data.copy()))
+
