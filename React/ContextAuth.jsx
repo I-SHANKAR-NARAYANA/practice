@@ -16,7 +16,6 @@ export function AuthProvider({ children }) {
 export function useAuth() {
   return useContext(AuthContext);
 }
-
 function Dashboard() {
   const { user, logout } = useAuth();
   return (
