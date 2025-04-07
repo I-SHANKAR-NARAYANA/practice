@@ -29,6 +29,7 @@ const resolvers = {
       posts.splice(i, 1);
       return true;
     },
+
   },
   Post: { author: (post) => users.find(u => u.id === post.authorId) },
   User: { posts: (user) => posts.filter(p => p.authorId === user.id) },
