@@ -30,5 +30,4 @@ const resolvers = {
     posts: (user) => postsLoader.load(user.id),
   },
 };
-
 module.exports = { userLoader, postsLoader, resolvers };
