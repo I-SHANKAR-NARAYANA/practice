@@ -16,7 +16,6 @@ class Student:
         if self.grade >= 2.0:
             return "Satisfactory"
         return "Probation"
-
 if __name__ == "__main__":
     s1 = Student(3.8, "Alice")
     s1.add_course("Math")
