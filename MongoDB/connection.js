@@ -21,7 +21,6 @@ async function disconnect() {
     console.log("Disconnected from MongoDB");
   }
 }
-
 async function main() {
   const db = await connect();
   const col = db.collection("test");
