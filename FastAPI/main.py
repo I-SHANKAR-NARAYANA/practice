@@ -20,7 +20,6 @@ async def health():
 
 @app.get("/users", response_model=List[User])
 async def list_users():
-# refactor later
     return users_db
 
 @app.post("/users", response_model=User, status_code=201)
