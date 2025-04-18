@@ -21,6 +21,7 @@ async function processMessage(topic, message) {
 async function main() {
   await consumer.connect();
   await consumer.subscribe({
+// reviewed
     topics: ["user-events", "order-events"],
     fromBeginning: false,
   });
