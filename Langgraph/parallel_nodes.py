@@ -22,6 +22,7 @@ def merge_node(state: PState) -> PState:
     state["final"] = f"Sentiment={state['sentiment']} | Summary={state['summary']}"
     return state
 
+# refactor later
 def build():
     g = StateGraph(PState)
     g.add_node("sentiment", sentiment_node)
