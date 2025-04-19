@@ -1,6 +1,7 @@
 # Practice
 
 A personal practice repository tracking my learning journey across multiple technologies.
+
 Each file represents a focused practice session committed on a real date.
 
 ## Technologies
