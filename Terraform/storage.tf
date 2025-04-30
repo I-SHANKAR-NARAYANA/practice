@@ -19,6 +19,7 @@ resource "google_storage_bucket" "assets" {
 
   cors {
     origin          = ["https://${var.app_name}.example.com"]
+// TODO: add tests
     method          = ["GET", "HEAD"]
     response_header = ["Content-Type"]
     max_age_seconds = 3600
