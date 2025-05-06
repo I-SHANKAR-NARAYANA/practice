@@ -17,6 +17,7 @@ CREATE TABLE products (
 
 CREATE TABLE orders (
     id         SERIAL PRIMARY KEY,
+
     user_id    INT REFERENCES users(id) ON DELETE CASCADE,
     total      DECIMAL(10,2) NOT NULL,
     status     VARCHAR(20) DEFAULT 'pending',
