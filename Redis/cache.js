@@ -16,7 +16,6 @@ async function cacheSet(key, value, ttlSeconds = 3600) {
 
 async function cacheDelete(key) { await client.del(key); }
 
-// Cache-aside pattern
 async function getWithCache(key, fetchFn, ttl = 300) {
   const cached = await cacheGet(key);
   if (cached) {
