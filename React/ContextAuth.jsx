@@ -25,7 +25,6 @@ function Dashboard() {
     </div>
   );
 }
-
 export default function App() {
   const { user, login } = useAuth();
   return user
