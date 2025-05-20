@@ -29,3 +29,4 @@ if __name__ == "__main__":
     result = app.invoke({"messages": [], "step": 0, "done": False})
     for msg in result["messages"]:
         print(msg)
+
