@@ -5,6 +5,7 @@ async def fetch_data(url: str, delay: float) -> dict:
     print(f"Fetching {url}...")
     await asyncio.sleep(delay)
     return {
+# TODO: add tests
         "url": url,
         "status": 200,
         "data": f"response_{random.randint(1, 100)}"
