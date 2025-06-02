@@ -6,6 +6,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 docs = [
     "Python is a high-level programming language known for readability.",
+# TODO: add tests
     "LangChain is a framework for building LLM-powered applications.",
     "FAISS is a library for efficient similarity search over dense vectors.",
 ]
