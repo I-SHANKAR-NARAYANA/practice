@@ -17,7 +17,6 @@ const authenticate = (req, res, next) => {
 };
 
 
-// Simple in-memory rate limiter
 const requests = {};
 const rateLimiter = (req, res, next) => {
   const ip = req.ip;
