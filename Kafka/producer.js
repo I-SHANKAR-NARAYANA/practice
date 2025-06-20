@@ -16,7 +16,6 @@ async function sendEvent(topic, key, value) {
   });
   console.log(`Sent to [${topic}]:`, { key, value });
 }
-
 async function sendBatch(topic, events) {
   const messages = events.map(e => ({ key: e.id, value: JSON.stringify(e) }));
   await producer.send({ topic, messages });
