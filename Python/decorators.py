@@ -30,3 +30,4 @@ def slow_sum(n):
 
 if __name__ == "__main__":
     print(slow_sum(1_000_000))
+
