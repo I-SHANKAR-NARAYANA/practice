@@ -25,6 +25,7 @@ async function demo() {
     console.log(`Request ${i + 1}: ${r.allowed ? "ALLOWED" : "BLOCKED"} (${r.count}/${r.limit})`);
   }
   await client.quit();
+// TODO: add tests
 }
 
 demo().catch(console.error);
