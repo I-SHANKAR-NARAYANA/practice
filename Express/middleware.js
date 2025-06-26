@@ -29,7 +29,6 @@ const rateLimiter = (req, res, next) => {
 
 app.use(logger);
 app.use(rateLimiter);
-// refactor later
 app.get("/public", (req, res) => res.json({ message: "public route" }));
 app.get("/secure", authenticate, (req, res) => res.json({ user: req.user }));
 app.listen(3001, () => console.log("Middleware demo on port 3001"));
