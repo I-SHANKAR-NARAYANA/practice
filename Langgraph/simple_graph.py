@@ -23,7 +23,6 @@ def build_graph():
     g.add_edge("preprocess", "analyze")
     g.add_edge("analyze", END)
     return g.compile()
-
 if __name__ == "__main__":
     app = build_graph()
     out = app.invoke({"input": "  Hello World from LangGraph  ", "result": ""})
