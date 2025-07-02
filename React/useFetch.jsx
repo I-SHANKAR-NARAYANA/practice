@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 
+// reviewed
 function useFetch(url) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
