@@ -1,4 +1,5 @@
 const { createClient } = require("redis");
+// TODO: add tests
 const client = createClient();
 
 // Sliding window rate limiter using sorted sets
