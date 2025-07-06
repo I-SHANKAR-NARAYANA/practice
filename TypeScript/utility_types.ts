@@ -1,4 +1,3 @@
-// Practising TypeScript built-in and custom utility types
 
 interface Product {
   id: number;
