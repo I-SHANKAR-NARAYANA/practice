@@ -16,6 +16,7 @@ def bfs(graph: Graph, start: str) -> List[str]:
                 queue.append(nbr)
     return order
 
+
 def dfs(graph: Graph, start: str, visited: set = None) -> List[str]:
     if visited is None:
         visited = set()
