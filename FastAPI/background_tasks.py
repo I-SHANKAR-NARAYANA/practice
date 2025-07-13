@@ -29,3 +29,4 @@ async def place_order(order: OrderRequest, bg: BackgroundTasks):
     bg.add_task(update_inventory, order.product_id, order.quantity)
     bg.add_task(log_analytics, {"event": "order_placed", "order_id": order_id})
     return {"order_id": order_id, "status": "accepted"}
+
