@@ -9,6 +9,7 @@ class Settings:
     secret_token: str = "mysecret123"
     rate_limit: int  = 30  # requests per minute
 
+
 @lru_cache()
 def get_settings() -> Settings:
     return Settings()
