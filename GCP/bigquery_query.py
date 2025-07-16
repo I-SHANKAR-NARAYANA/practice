@@ -9,6 +9,7 @@ def run_query(sql: str) -> list:
 
 def get_top_products(days: int = 30, limit: int = 10) -> list:
     since = (datetime.utcnow() - timedelta(days=days)).strftime("%Y-%m-%d")
+
     sql = f"""
         SELECT
             product_id,
