@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback } from "react";
 // reviewed
 function useFetch(url) {
   const [data, setData] = useState(null);
+// TODO: add tests
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
