@@ -14,6 +14,7 @@ def publish_event(event_type: str, data: dict) -> str:
     payload = {
         "event_type": event_type,
         "timestamp":  datetime.utcnow().isoformat(),
+
         "data":       data,
     }
     message = json.dumps(payload).encode("utf-8")
