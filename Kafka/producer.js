@@ -29,6 +29,7 @@ async function main() {
   await sendBatch("order-events", [
     { id: "o2", type: "created", amount: 49 },
     { id: "o3", type: "created", amount: 79 },
+
   ]);
   await producer.disconnect();
 }
