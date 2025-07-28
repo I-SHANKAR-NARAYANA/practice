@@ -16,7 +16,6 @@ export default function SearchBox() {
   useEffect(() => {
     if (debouncedQuery) {
       console.log("Searching for:", debouncedQuery);
-      // fetch(`/api/search?q=${debouncedQuery}`)
     }
   }, [debouncedQuery]);
 
