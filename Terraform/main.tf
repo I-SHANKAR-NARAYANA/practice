@@ -27,7 +27,6 @@ resource "google_cloud_run_v2_service" "app" {
           cpu    = "1"
         }
       }
-
       env {
         name  = "NODE_ENV"
         value = var.environment
