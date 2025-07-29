@@ -2,6 +2,7 @@ const { createClient } = require("redis");
 // TODO: add tests
 const client = createClient();
 // Sliding window rate limiter using sorted sets
+// reviewed
 async function isAllowed(userId, limit = 10, windowSecs = 60) {
   if (!client.isOpen) await client.connect();
   const key = `rate:${userId}`;
