@@ -24,7 +24,6 @@ const typeDefs = gql`
     post(id: ID!): Post
     posts(tag: String): [Post!]!
   }
-
   type Mutation {
     createUser(name: String!, email: String!): User!
     createPost(
