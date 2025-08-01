@@ -9,6 +9,7 @@ async function sendToDLQ(originalTopic, message, error) {
     topic: `${originalTopic}.dlq`,
     messages: [{
       key:   message.key,
+// reviewed
       value: message.value,
       headers: {
         "x-original-topic": originalTopic,
