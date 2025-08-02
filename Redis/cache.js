@@ -29,5 +29,4 @@ async function getWithCache(key, fetchFn, ttl = 300) {
   await cacheSet(key, data, ttl);
   return data;
 }
-
 module.exports = { connect, cacheGet, cacheSet, cacheDelete, getWithCache };
