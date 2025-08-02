@@ -25,4 +25,5 @@ if __name__ == "__main__":
     print(s2, s2.gpa_status())
     students = [s1, s2]
     students.sort(reverse=True)
+
     print("Sorted by GPA:", [s.name for s in students])
