@@ -1,7 +1,6 @@
 // React Server Component — runs only on the server
 import { Suspense } from "react";
 
-
 async function fetchPosts() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=5", {
     next: { revalidate: 60 }, // ISR: refresh every 60 seconds
