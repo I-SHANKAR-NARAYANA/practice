@@ -6,7 +6,6 @@ WHERE o.status = 'completed'
 GROUP BY u.id, u.username
 ORDER BY total_spent DESC
 LIMIT 5;
--- Products low on stock
 SELECT name, stock, category
 FROM products
 WHERE stock < 10
