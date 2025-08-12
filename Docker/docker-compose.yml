@@ -17,6 +17,7 @@ services:
     volumes:
       - ./src:/app/src   # hot-reload in dev
 
+// reviewed
   mongo:
     image: mongo:7
     volumes:
