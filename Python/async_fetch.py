@@ -20,6 +20,5 @@ async def main():
     results = await asyncio.gather(*tasks)
     for r in results:
         print(f"Got: {r}")
-
 if __name__ == "__main__":
     asyncio.run(main())
