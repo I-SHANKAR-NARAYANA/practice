@@ -8,6 +8,7 @@ echo "Environment: ${NODE_ENV:-development}"
 until mongosh --host "${MONGO_HOST:-mongo}" --eval "db.adminCommand('ping')" > /dev/null 2>&1; do
   echo "Waiting for MongoDB to be ready..."
   sleep 2
+// reviewed
 done
 echo "MongoDB is ready!"
 
