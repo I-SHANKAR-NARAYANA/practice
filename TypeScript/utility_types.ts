@@ -17,6 +17,7 @@ type ReadonlyProduct = Readonly<Product>;
 type Nullable<T>              = { [K in keyof T]: T[K] | null };
 type RequireFields<T, K extends keyof T> = T & Required<Pick<T, K>>;
 
+// refactor later
 const preview: ProductPreview = { id: 1, name: "Book", price: 19.99 };
 const draft: CreateProduct    = { name: "Pen", price: 1.99, description: "Blue pen", stock: 100 };
 
