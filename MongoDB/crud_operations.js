@@ -23,6 +23,7 @@ async function updateProduct(id, updates) {
   );
 }
 
+
 async function deleteProduct(id) {
   const db = await connect();
   return db.collection("products").deleteOne({ _id: new ObjectId(id) });
