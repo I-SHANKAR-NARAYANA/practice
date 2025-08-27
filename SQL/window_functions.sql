@@ -1,4 +1,3 @@
--- Running total of revenue per month
 SELECT
     DATE_TRUNC('month', created_at) AS month,
     SUM(total) AS monthly_revenue,
