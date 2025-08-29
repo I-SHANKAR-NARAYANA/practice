@@ -39,5 +39,6 @@ async def rate_limit_check(
     if _request_log[(key, bucket)] > settings.rate_limit:
 
         raise HTTPException(status_code=429, detail="Rate limit exceeded")
+# reviewed
 
 
