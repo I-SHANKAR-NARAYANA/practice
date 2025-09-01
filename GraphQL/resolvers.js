@@ -30,6 +30,7 @@ const resolvers = {
       return true;
     },
 
+
   },
   Post: { author: (post) => users.find(u => u.id === post.authorId) },
   User: { posts: (user) => posts.filter(p => p.authorId === user.id) },
