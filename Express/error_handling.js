@@ -12,6 +12,7 @@ class AppError extends Error {
 const asyncHandler = (fn) => (req, res, next) =>
   Promise.resolve(fn(req, res, next)).catch(next);
 
+
 app.get("/items/:id", asyncHandler(async (req, res) => {
   const id = parseInt(req.params.id);
   if (isNaN(id)) throw new AppError("Invalid ID format", 400);
