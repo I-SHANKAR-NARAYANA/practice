@@ -27,3 +27,4 @@ def upload_json(bucket_name: str, data: dict, blob_name: str) -> str:
 if __name__ == "__main__":
     files = list_files("my-data-bucket", prefix="reports/")
     print("Files:", files)
+
