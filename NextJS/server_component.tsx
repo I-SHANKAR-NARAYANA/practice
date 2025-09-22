@@ -6,6 +6,7 @@ async function fetchPosts() {
     next: { revalidate: 60 }, // ISR: refresh every 60 seconds
   });
   if (!res.ok) throw new Error("Failed to fetch posts");
+
   return res.json();
 }
 
