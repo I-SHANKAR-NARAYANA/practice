@@ -4,7 +4,6 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
-# Sample documents to index
 docs = [
     "Python is a high-level programming language known for readability.",
     "LangChain is a framework for building LLM-powered applications.",
