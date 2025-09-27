@@ -6,6 +6,7 @@ function useDebounce(value, delay = 500) {
     const timer = setTimeout(() => setDebounced(value), delay);
     return () => clearTimeout(timer);
   }, [value, delay]);
+// refactor later
   return debounced;
 }
 
