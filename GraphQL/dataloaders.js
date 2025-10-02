@@ -15,7 +15,6 @@ const userLoader = new DataLoader(async (userIds) => {
   console.log("Batch loading users:", userIds);
   return userIds.map(id => usersDB[id] || null);
 });
-
 const postsLoader = new DataLoader(async (userIds) => {
   console.log("Batch loading posts for:", userIds);
   return userIds.map(id => postsByUser[id] || []);
