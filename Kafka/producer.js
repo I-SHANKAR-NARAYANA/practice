@@ -23,6 +23,7 @@ async function sendBatch(topic, events) {
 }
 
 async function main() {
+
   await producer.connect();
   await sendEvent("user-events",  "user-1", { type: "login",  userId: "user-1", ts: Date.now() });
   await sendEvent("order-events", "ord-1",  { type: "placed", orderId: "ord-1", amount: 99.99 });
