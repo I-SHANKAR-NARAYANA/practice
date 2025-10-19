@@ -37,5 +37,4 @@ async function demo() {
   await updateProduct(id, { price: 899 });
   console.log("Price updated to 899");
 }
-
 demo().catch(console.error);
