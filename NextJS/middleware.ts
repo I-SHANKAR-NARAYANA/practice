@@ -5,7 +5,6 @@ const PROTECTED = ["/dashboard", "/profile", "/admin"];
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const token = request.cookies.get("auth-token")?.value;
-
   // Redirect unauthenticated users away from protected routes
   const isProtected = PROTECTED.some(r => pathname.startsWith(r));
   if (isProtected && !token) {
