@@ -17,7 +17,6 @@ def agent_node(state: AgentState) -> AgentState:
 def should_continue(state: AgentState) -> str:
 
     return END if state["done"] else "agent"
-
 def build_agent():
     g = StateGraph(AgentState)
     g.add_node("agent", agent_node)
