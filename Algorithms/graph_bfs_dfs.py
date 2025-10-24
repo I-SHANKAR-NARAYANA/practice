@@ -43,3 +43,4 @@ if __name__ == "__main__":
     print("BFS:", bfs(g, "A"))
     print("DFS:", dfs(g, "A"))
     print("Has cycle:", has_cycle(g))
+
