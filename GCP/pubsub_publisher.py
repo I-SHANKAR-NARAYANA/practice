@@ -20,6 +20,7 @@ def publish_event(event_type: str, data: dict) -> str:
     future = publisher.publish(topic_path, message, event_type=event_type)
     msg_id = future.result()
     print(f"Published [{event_type}] message_id={msg_id}")
+
     return msg_id
 
 def publish_batch(events: list) -> None:
