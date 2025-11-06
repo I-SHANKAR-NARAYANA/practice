@@ -10,6 +10,7 @@ async function fetchPosts() {
   return res.json();
 }
 
+
 async function PostList() {
   const posts = await fetchPosts();
   return (
