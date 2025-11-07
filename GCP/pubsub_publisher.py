@@ -8,6 +8,7 @@ TOPIC_ID   = "user-events"
 publisher  = pubsub_v1.PublisherClient()
 topic_path = publisher.topic_path(PROJECT_ID, TOPIC_ID)
 
+
 def publish_event(event_type: str, data: dict) -> str:
 
     payload = {
