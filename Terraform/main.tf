@@ -20,7 +20,6 @@ resource "google_cloud_run_v2_service" "app" {
   template {
     containers {
       image = "gcr.io/${var.project_id}/${var.app_name}:latest"
-
       resources {
         limits = {
           memory = "512Mi"
