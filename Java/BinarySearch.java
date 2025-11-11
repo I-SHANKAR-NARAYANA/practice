@@ -10,7 +10,6 @@ public class BinarySearch {
         }
         return -1;
     }
-
     public static void main(String[] args) {
         int[] sorted = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91};
         System.out.println("Index of 23: " + binarySearch(sorted, 23));
