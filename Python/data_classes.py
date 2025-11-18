@@ -12,6 +12,7 @@ class Student:
     def gpa_status(self) -> str:
         if self.grade >= 3.5:
             return "Honors"
+
         if self.grade >= 2.0:
             return "Satisfactory"
         return "Probation"
