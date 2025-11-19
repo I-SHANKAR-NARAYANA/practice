@@ -37,3 +37,4 @@ async def rate_limit_check(
 
         raise HTTPException(status_code=429, detail="Rate limit exceeded")
 
+
