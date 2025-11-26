@@ -13,7 +13,6 @@ resource "google_storage_bucket" "assets" {
     }
     action {
       type = "Delete"
-
     }
   }
 
