@@ -1,5 +1,4 @@
 const DataLoader = require("dataloader");
-
 // Simulated database maps
 const usersDB = {
   "1": { id: "1", name: "Alice", email: "alice@test.com" },
