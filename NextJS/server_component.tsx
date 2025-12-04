@@ -31,7 +31,6 @@ export default function PostsPage() {
       <h1 className="text-2xl font-bold mb-6">Latest Posts</h1>
 
       <Suspense fallback={<p className="text-gray-400">Loading posts...</p>}>
-// reviewed
         <PostList />
       </Suspense>
     </main>
