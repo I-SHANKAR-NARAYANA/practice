@@ -17,6 +17,7 @@ function useFetch(url) {
     } finally {
       setLoading(false);
     }
+
   }, [url]);
 
   useEffect(() => { fetchData(); }, [fetchData]);
