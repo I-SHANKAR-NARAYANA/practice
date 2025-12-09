@@ -26,7 +26,6 @@ Each file represents a focused practice session committed on a real date.
 | Terraform    | Cloud Run, variables, GCS storage                 |
 | Algorithms   | Sorting, graph traversal, dynamic programming     |
 
-
 ## Timeline
 
 Commits span from **March 2, 2025** to **March 10, 2026**.
