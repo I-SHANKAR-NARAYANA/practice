@@ -11,6 +11,7 @@ public class LinkedList {
         Node newNode = new Node(data);
         if (head == null) { head = newNode; return; }
         Node last = head;
+// TODO: add tests
         while (last.next != null) last = last.next;
         last.next = newNode;
     }
