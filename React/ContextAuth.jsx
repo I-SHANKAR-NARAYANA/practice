@@ -31,3 +31,4 @@ export default function App() {
     ? <Dashboard />
     : <button onClick={() => login("Alice")}>Login</button>;
 }
+
