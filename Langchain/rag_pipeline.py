@@ -15,6 +15,7 @@ embeddings = OpenAIEmbeddings()
 vectorstore = FAISS.from_texts(docs, embeddings)
 retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
 
+
 prompt = ChatPromptTemplate.from_template(
     "Answer based on the context below:\n{context}\n\nQuestion: {question}"
 )
