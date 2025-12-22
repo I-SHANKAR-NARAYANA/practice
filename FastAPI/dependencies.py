@@ -26,6 +26,7 @@ async def verify_token(
 _request_log: dict = {}
 
 async def rate_limit_check(
+
     client_id: Optional[str] = Header(None),
     settings: Settings = Depends(get_settings),
 ):
