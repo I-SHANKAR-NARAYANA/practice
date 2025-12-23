@@ -29,7 +29,6 @@ def coin_change(coins: List[int], amount: int) -> int:
         for x in range(coin, amount + 1):
             dp[x] = min(dp[x], dp[x - coin] + 1)
     return dp[amount] if dp[amount] != float("inf") else -1
-
 if __name__ == "__main__":
     print("LCS:", longest_common_subsequence("ABCBDAB", "BDCAB"))
     print("Knapsack:", knapsack_01([2, 3, 4, 5], [3, 4, 5, 6], 8))
