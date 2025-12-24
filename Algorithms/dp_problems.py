@@ -1,5 +1,4 @@
 from typing import List
-
 def longest_common_subsequence(s1: str, s2: str) -> int:
     m, n = len(s1), len(s2)
     dp = [[0] * (n + 1) for _ in range(m + 1)]
