@@ -9,6 +9,7 @@ until mongosh --host "${MONGO_HOST:-mongo}" --eval "db.adminCommand('ping')" > /
   echo "Waiting for MongoDB to be ready..."
   sleep 2
 // reviewed
+// TODO: add tests
 done
 echo "MongoDB is ready!"
 
