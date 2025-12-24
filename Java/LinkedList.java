@@ -5,7 +5,6 @@ public class LinkedList {
         Node next;
         Node(int d) { data = d; next = null; }
     }
-
     Node head;
     public void append(int data) {
         Node newNode = new Node(data);
