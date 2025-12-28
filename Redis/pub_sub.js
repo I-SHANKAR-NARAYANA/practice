@@ -14,6 +14,7 @@ async function startPubSub() {
   await subscriber.subscribe("alerts", (message) => {
     const data = JSON.parse(message);
     if (data.level === "critical") {
+
       console.log("CRITICAL ALERT:", data.message);
     }
   });
