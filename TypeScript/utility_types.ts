@@ -13,7 +13,6 @@ type CreateProduct   = Omit<Product, "id">;
 type PartialProduct  = Partial<Product>;
 type ReadonlyProduct = Readonly<Product>;
 
-// Custom utility types
 type Nullable<T>              = { [K in keyof T]: T[K] | null };
 type RequireFields<T, K extends keyof T> = T & Required<Pick<T, K>>;
 
