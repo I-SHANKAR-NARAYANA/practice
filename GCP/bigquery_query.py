@@ -38,3 +38,4 @@ def get_daily_active_users(days: int = 7) -> list:
 if __name__ == "__main__":
     print("Top products:", get_top_products(30, 5))
     print("DAU:", get_daily_active_users(7))
+
