@@ -31,4 +31,3 @@ public class LinkedList {
         ll.printList();
     }
 }
-
