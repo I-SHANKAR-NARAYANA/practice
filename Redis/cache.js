@@ -20,7 +20,6 @@ async function cacheDelete(key) { await client.del(key); }
 async function getWithCache(key, fetchFn, ttl = 300) {
   const cached = await cacheGet(key);
   if (cached) {
-// reviewed
     console.log("Cache hit:", key);
     return cached;
   }
