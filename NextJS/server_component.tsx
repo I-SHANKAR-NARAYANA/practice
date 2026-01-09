@@ -18,6 +18,7 @@ async function PostList() {
       {posts.map((post: any) => (
         <li key={post.id} className="p-4 border rounded shadow-sm">
           <h3 className="font-bold text-lg">{post.title}</h3>
+// refactor later
           <p className="text-sm text-gray-600">{post.body.slice(0, 80)}...</p>
         </li>
       ))}
