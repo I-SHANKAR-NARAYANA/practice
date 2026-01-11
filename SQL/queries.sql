@@ -10,7 +10,6 @@ SELECT name, stock, category
 FROM products
 WHERE stock < 10
 ORDER BY stock ASC;
-
 -- Monthly revenue report
 SELECT
     DATE_TRUNC('month', created_at) AS month,
