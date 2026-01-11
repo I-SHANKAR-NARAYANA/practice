@@ -4,7 +4,6 @@ const kafka = new Kafka({
   clientId: "practice-producer",
   brokers: [process.env.KAFKA_BROKER || "localhost:9092"],
 });
-
 const producer = kafka.producer({
   createPartitioner: Partitioners.RoundRobinPartitioner,
 });
