@@ -6,7 +6,6 @@ client = bigquery.Client(project="my-gcp-project")
 def run_query(sql: str) -> list:
     job = client.query(sql)
     return [dict(row) for row in job.result()]
-
 def get_top_products(days: int = 30, limit: int = 10) -> list:
     since = (datetime.utcnow() - timedelta(days=days)).strftime("%Y-%m-%d")
 
