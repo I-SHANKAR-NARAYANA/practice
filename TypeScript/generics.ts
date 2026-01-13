@@ -1,4 +1,3 @@
-// Generic repository pattern
 interface Repository<T, ID> {
   findById(id: ID): Promise<T | null>;
   findAll(): Promise<T[]>;
