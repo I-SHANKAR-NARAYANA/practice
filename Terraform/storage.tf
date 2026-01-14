@@ -27,7 +27,6 @@ resource "google_storage_bucket" "assets" {
 
   uniform_bucket_level_access = true
 }
-
 # Allow public read only in production
 resource "google_storage_bucket_iam_member" "public_read" {
   count  = var.environment == "prod" ? 1 : 0
