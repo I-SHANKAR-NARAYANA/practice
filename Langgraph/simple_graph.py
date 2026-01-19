@@ -27,3 +27,4 @@ if __name__ == "__main__":
     app = build_graph()
     out = app.invoke({"input": "  Hello World from LangGraph  ", "result": ""})
     print(out["result"])
+
