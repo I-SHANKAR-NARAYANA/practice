@@ -28,6 +28,7 @@ async function main() {
   await sendEvent("user-events",  "user-1", { type: "login",  userId: "user-1", ts: Date.now() });
   await sendEvent("order-events", "ord-1",  { type: "placed", orderId: "ord-1", amount: 99.99 });
   await sendBatch("order-events", [
+
     { id: "o2", type: "created", amount: 49 },
     { id: "o3", type: "created", amount: 79 },
 
