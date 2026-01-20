@@ -7,6 +7,7 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 llm = ChatOpenAI(model="gpt-3.5-turbo")
 store = {}
 
+
 def get_session_history(session_id: str):
     if session_id not in store:
         store[session_id] = InMemoryChatMessageHistory()
