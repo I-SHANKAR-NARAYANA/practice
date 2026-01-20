@@ -4,7 +4,6 @@ from typing import TypedDict
 class State(TypedDict):
     input: str
     result: str
-
 def preprocess(state: State) -> State:
     state["input"] = state["input"].strip().lower()
     return state
