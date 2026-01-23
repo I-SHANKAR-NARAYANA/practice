@@ -21,6 +21,7 @@ export default function SearchBox() {
   }, [debouncedQuery]);
 
   return (
+
     <div>
       <input
         value={query}
