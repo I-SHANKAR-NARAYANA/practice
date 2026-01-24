@@ -12,6 +12,7 @@ const typeDefs = gql`
     id: ID!
     title: String!
     content: String!
+
     author: User!
     tags: [String!]!
     createdAt: String!
