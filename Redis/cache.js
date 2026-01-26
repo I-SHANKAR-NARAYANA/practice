@@ -10,7 +10,6 @@ async function cacheGet(key) {
   const val = await client.get(key);
   return val ? JSON.parse(val) : null;
 }
-
 async function cacheSet(key, value, ttlSeconds = 3600) {
   await client.setEx(key, ttlSeconds, JSON.stringify(value));
 }
