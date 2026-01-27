@@ -34,3 +34,4 @@ if __name__ == "__main__":
     publish_event("user.signup",  {"user_id": "u123", "email": "test@example.com"})
     publish_event("order.placed", {"order_id": "o456", "amount": 99.99})
     publish_batch([{"id": "e1", "type": "click"}, {"id": "e2", "type": "view"}])
+
