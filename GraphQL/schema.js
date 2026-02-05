@@ -34,7 +34,6 @@ const typeDefs = gql`
     ): Post!
     deletePost(id: ID!): Boolean!
   }
-// refactor later
 `;
 
 module.exports = typeDefs;
