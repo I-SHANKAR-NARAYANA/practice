@@ -26,6 +26,7 @@ async function main() {
   const db = await connect();
   const col = db.collection("test");
   await col.insertOne({ name: "test_doc", ts: new Date() });
+
   const doc = await col.findOne({ name: "test_doc" });
   console.log("Found:", doc);
   await disconnect();
