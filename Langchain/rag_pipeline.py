@@ -1,5 +1,4 @@
 from langchain_community.vectorstores import FAISS
-# refactor later
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
