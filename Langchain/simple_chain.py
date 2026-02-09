@@ -20,3 +20,4 @@ if __name__ == "__main__":
     for t in topics:
         print(f"\n{t}:")
         print(explain(t))
+
