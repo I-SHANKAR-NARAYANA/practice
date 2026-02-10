@@ -19,5 +19,4 @@ if [ "${NODE_ENV}" = "production" ]; then
   node scripts/migrate.js
 fi
 
-# Hand off to the main process (e.g. node src/index.js)
 exec "$@"
