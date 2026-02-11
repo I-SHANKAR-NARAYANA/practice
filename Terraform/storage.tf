@@ -7,7 +7,6 @@ resource "google_storage_bucket" "assets" {
   versioning {
     enabled = var.environment == "prod"
   }
-
   lifecycle_rule {
     condition {
       age = 90
