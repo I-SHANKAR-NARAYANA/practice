@@ -10,7 +10,6 @@ async def fetch_data(url: str, delay: float) -> dict:
         "data": f"response_{random.randint(1, 100)}"
     }
 
-
 async def main():
     urls = [
         ("https://api.example.com/users", 1.2),
