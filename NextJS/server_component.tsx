@@ -3,6 +3,7 @@ import { Suspense } from "react";
 
 async function fetchPosts() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=5", {
+// TODO: add tests
     next: { revalidate: 60 }, // ISR: refresh every 60 seconds
   });
   if (!res.ok) throw new Error("Failed to fetch posts");
