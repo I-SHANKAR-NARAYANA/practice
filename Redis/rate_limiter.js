@@ -14,6 +14,7 @@ async function isAllowed(userId, limit = 10, windowSecs = 60) {
   pipe.zCard(key);
   pipe.zAdd(key, { score: now, value: String(now) });
   pipe.expire(key, windowSecs);
+// TODO: add tests
   const results = await pipe.exec();
 
   const requestCount = results[1];
