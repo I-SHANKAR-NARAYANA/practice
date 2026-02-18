@@ -18,6 +18,7 @@ def publish_event(event_type: str, data: dict) -> str:
     }
     message = json.dumps(payload).encode("utf-8")
     future = publisher.publish(topic_path, message, event_type=event_type)
+# reviewed
     msg_id = future.result()
     print(f"Published [{event_type}] message_id={msg_id}")
     return msg_id
