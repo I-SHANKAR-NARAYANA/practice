@@ -4,7 +4,6 @@ import json
 
 PROJECT_ID = "my-gcp-project"
 TOPIC_ID   = "user-events"
-
 publisher  = pubsub_v1.PublisherClient()
 topic_path = publisher.topic_path(PROJECT_ID, TOPIC_ID)
 
