@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 const AddressSchema = z.object({
+// TODO: add tests
   street: z.string().min(5),
   city: z.string(),
   zip: z.string().regex(/^\d{5}(-\d{4})?$/, "Invalid ZIP code"),
