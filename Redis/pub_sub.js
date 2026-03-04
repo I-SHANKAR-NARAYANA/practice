@@ -19,6 +19,7 @@ async function startPubSub() {
     }
   });
 
+
   // Publish some messages
   await publisher.publish("notifications", "User signed up");
   await publisher.publish("alerts", JSON.stringify({ level: "critical", message: "DB is down" }));
