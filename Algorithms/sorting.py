@@ -1,6 +1,5 @@
 from typing import List
 import random
-
 def merge_sort(arr: List[int]) -> List[int]:
     if len(arr) <= 1:
         return arr
